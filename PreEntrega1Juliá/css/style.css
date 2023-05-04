@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 62,5%;
+}
+
+body{
+  background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.445) 0%, rgba(82, 4, 4, 0.336)100%), 
+  url(../imagenes/gimnasio.jpg);
+  background-blend-mode: multiply,multiply;
+  background-position: center;
+  background-size: cover;
+
+}
+/* Header */
+header {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* MENU NAVEGACIO */
+
+.navbar{
+    height: inherit;
+    position: relative;
+}
+
+.navbar__enlaces {
+    position: absolute;
+    right: 0;
+   padding: 10px 0;
+   top: 50%; 
+   transform: translateY(-50%);
+}
+
+.navbar__enlaces a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 10px;
+}
+   
+.navbar__logo{
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    padding: 10px 0px;
+    
+}
+
+.navbar__logo img{
+    height: 50px;
+}
+
+
+/* INDEX MAIN */
+
+/* TEXTOS MAIN */
+.textos{
+    height: calc(100vh - 60px);
+}
+.contenedor__textos {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    display: inline-block;
+  }
+  
+.contenedor__textos h1 {
+    width: 50%;
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contenedor__textos span{
+    color: #FF0000;
+}
+
+.contenedor__textos p{
+    width: 50%;
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* CLASES */
+.clases{
+    height: calc(100vh - 60px);
+}
+
+.clases__items{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    
+}
+
+.clases__items div{
+    background-color: #950101;
+    color: #fff;
+    text-align: center;
+    width: 25%;
+    margin-right: 3%; 
+    border-radius: 10px;
+    margin-right: 3%;
+    display: inline-block;    
+}
+
+.clases__items img{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.clases__items button{
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #3D0000;
+    border: 1px solid #3D0000 ;
+    border-radius: 10px;
+    
+    
+}
+
+/* HORARIOS */
+.horarios{
+    height: 350px;
+    margin: 0 auto;
+    background-color: #950101;
+}
+.horarios h2{
+    color: #FFF;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+
+}
+.horarios table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0px auto;
+    padding: 10px 0;
+  }
+  
+.horarios th,
+  td {
+    border: 2px solid #000000;
+    padding: 8px;
+    text-align: center;
+    background-color: #FF0000;
+    color: #fff;
+  }
+  
+.horarios th {
+    background-color: #3D0000;
+    color: #fff;
+  }
+/* ACCEDER FORMULARIO */
+
+
+/* CONTENEDOR FORMULARIO ACCEDER */
+.contenedor__form{
+    position: relative;
+    height: calc(100vh - 60px)
+    
+}
+
+/* H1 FORMULARIO ACCEDER */
+.contenedor__form h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.form{
+    background: rgba(0, 0, 0, 0.7);
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+/* IMPUT FORMULARIO ACCEDER */
+.form label{   
+display: block;
+width: 80%;
+margin: 0 auto;
+text-align: left;
+color:#fff ;
+
+
+}
+
+/* IMPUT FORMULARIO ACCEDER */
+.form input{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 1rem;
+}
+/* INPUT SUBMIT FORMULARIO ACCEDER */
+.form input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background-color: #FF0000;
+    border-radius: 10px;
+    font-size: 18px;
+    
+}
+/* FORMULARIO REGISTRO */
+.formulario__registro{
+    background: rgba(0, 0, 0, 0.7);
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+/* LABEL FORMULARIO REGISTRO */
+.formulario__registro label{   
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    color:#fff ;
+
+    }
+    
+/* INPUT FORMULARIO REGISTRO */    
+.formulario__registro input{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        color: #fff;
+        font-size: 1rem;
+}
+
+/* INPUT SUBMIT FORMULARIO REGISTRO */
+.formulario__registro input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background-color: #FF0000;
+    border-radius: 10px;
+    font-size: 18px;
+    
+}
+
+
+
+
+.form__enlaces {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form__enlaces a{
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    color: #FF0000;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+.form__enlaces p{
+    display: block;
+    text-align: center;
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+/* NOSOTROS */
+
+/* ACERCA DE */
+
+.contenedor__nosotros{
+    
+    height: calc(100vh - 60px);
+    text-align: center;
+   
+}
+.nosotros{
+    padding: 50px 0;
+}
+
+.nosotros h2{
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #FF0000;
+}
+
+.nosotros p{
+    margin: 20px auto;
+    width: 60%;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.nosotros a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #950101;
+    color: #fff;
+    padding: 5px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#equipo{
+    width: 100%;
+    background: #950101;
+    height: auto;
+}
+
+#equipo h2{
+    text-align: center;
+    color: #F2f2f2;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 8px 0;
+}
+.contenedor__entrenadores{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    
+    
+}
+.entrenadores{
+    color: #f2f2f2;
+    width: 25%;
+    margin-right: 3%; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 3%;
+    display: inline-block;    
+    
+}
+
+.entrenadores img{
+    width: 70%;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.entrenadores h3{
+    padding: 5px 0;
+}
+
+
+.footer{
+    background-color: #3D0000;
+    height: 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer p{
+    line-height: 80px;
+}
+
+
+
+
